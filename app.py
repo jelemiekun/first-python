@@ -1,5 +1,4 @@
-patient_name = "John Smith"
-age = 20
-existing_patient = False
+name = input("Please type your name: ")
+fav_color = input("Please type your favourite color: ")
 
-print("Hello world!")
+print(name + "'s favorite color is " + fav_color)
