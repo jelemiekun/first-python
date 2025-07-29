@@ -1,6 +1,8 @@
-weight_lbs = input("Weight (lbs): ")
-print(type(weight_lbs))
-weight_lbs = int(weight_lbs)
-print(type(weight_lbs))
-weight_kg = weight_lbs * 0.45
-print("Weight (kg): " + str(weight_kg))
+first_name = "Meow"
+last_name = "Arf"
+message = f"{first_name} [{last_name}]"
+
+if len(message) > 15:
+    print("Too many characters!")
+else:
+    print(message.upper())
