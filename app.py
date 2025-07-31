@@ -1,18 +1,33 @@
-first_name = input("First Name: ")
-last_name = input("Last Name: ")
-age = input ("Age: ")
-age = int(age)
-find_name = input("Find name: ")
+first_number = float(input("First Number: "))
+second_number = float(input("Second Number: "))
 
-message = f"{first_name} {last_name} is {age} years old."
+operation_dialogue = """
+Select operation:
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Modulus
+6 - Exponent
+"""
+print(operation_dialogue)
+operation_selected = int(input("Choose operation: "))
 
-print(message)
-print(f"The above message contains {len(message)} characters")
-print(message.lower().replace("john".lower(), "Johnnn"))
+result = 0
+result = float(result)
 
-found = find_name.lower() in message.lower()
+match operation_selected:
+    case 1:
+        result = first_number + second_number
+    case 2:
+        result = first_number - second_number
+    case 3:
+        result = first_number * second_number
+    case 4:
+        result = first_number / second_number
+    case 5:
+        result = first_number % second_number
+    case 6:
+        result = first_number ** second_number
 
-if found:
-    print(f"{find_name} found.")
-else:
-    print(f"Unable to find {find_name}.")
+print(f"Result: {result}")
